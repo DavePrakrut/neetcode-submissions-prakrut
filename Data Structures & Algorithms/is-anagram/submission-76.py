@@ -1,0 +1,8 @@
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s)!=len(t):
+            return False
+        counts,countt=Counter(s),Counter(t)
+        return counts==countt   
+        
